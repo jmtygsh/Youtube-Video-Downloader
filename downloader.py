@@ -3,16 +3,16 @@
 from pytube import YouTube
 
 link = input("Enter Url - "'')
-youtube_1 = YouTube(link)
+youtube_main = YouTube(link)
 
 # Get video title
-print(youtube_1.title)
+print(youtube_main.title)
 
 # Get video thumbnail
-print(youtube_1.thumbnail_url)
+print(youtube_main.thumbnail_url)
 
 # Get the stream 
-videos = youtube_1.streams.all()
+videos = youtube_main.streams.all()
 vid = list(enumerate(videos))
 for i in vid:
     print(i)
